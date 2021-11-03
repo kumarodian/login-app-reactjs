@@ -12,8 +12,8 @@ function Dashboard(props) {
 
   return (
     <div>
-      Welcome {user.name}!<br /><br />
-      <input type="button" onClick={handleLogout} value="Logout" />
+      Welcome, <span id="userName">{user.name}!</span><br /><br />
+      <input className="btn btn-warning" type="button" onClick={handleLogout} value="Logout" />
     </div>
   );
 }

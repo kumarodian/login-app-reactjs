@@ -6,6 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -14,25 +19,39 @@ code {
 
 .content {
   padding: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .header {
   padding: 10px;
-  background: #edf2f4;
-  border-bottom: 1px solid #999;
+  background: linear-gradient(45deg, #5600ff, #0066ff);
 }
 .header a {
-  color: #0072ff;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 5px;
 }
 .header a:hover {
-  color: #8a0f53;
+  color: #d0d0d0;
 }
 .header small {
   color: #666;
 }
 .header .active {
-  color: #2c7613;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.loginBox{
+  background: linear-gradient(45deg, #f0f0f0, gainsboro);
+  width: fit-content;
+  padding: 60px 75px;
+  margin: auto;
+  border-radius: 10px;
+}
+#userName{
+  font-weight: 600;
+  color: #5600ff;
+  font-size: 1.2rem;
 }
